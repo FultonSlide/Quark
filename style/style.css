@@ -1,0 +1,637 @@
+/*Style sheet by: William Qoro
+  For: QUARK site
+  For: Assignment 2 of Web Applications Development 2019*/
+
+  /*Page formatting*/
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-container {
+    padding-bottom: 50px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/*End page formatting*/
+
+/*Header styling*/
+#header {
+    position: relative;
+    background-color: #ff8a05;
+    color: white;
+    text-align: left;
+    padding: 7px;
+    padding-left: 8%;
+    font-family: sans-serif;
+}
+
+#quark a {
+    text-decoration: none;
+    color: white;
+    padding: 1px 10px 1px 10px;
+    border: 3px solid white;
+}
+/*End header styling*/
+
+/*Navbar styling*/
+#navbar {
+    position: absolute;
+    top: 16px;
+    right: 7%;
+    float: right;
+    font-family: sans-serif;
+}
+
+#nav-element {
+    padding: 5px;
+    padding-right: 10px;
+}
+
+#nav-element a {
+  transition: 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+#nav-element a:hover {
+  color: #ff4c05;
+}
+/*End navbar styling*/
+
+/*Hamburger menu styling*/
+#hburger {
+    display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#hamburger-menu label {
+    transition: 0.3s;
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 45px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+#hamburger-menu label:hover {
+  color: #ff4c05;
+}
+
+#hamburger-menu input {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+/*End hamburger menu styling*/
+
+/*Body styling*/
+#body {
+    position: relative;
+    font-family: sans-serif;
+    margin: 2% 30% 10% 30%;
+    padding: 11px 25px 25px 25px;
+    background: linear-gradient(to bottom, #ff8a05 55px, white 55px);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 0 20px -10px;
+}
+
+#body #details {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#body p {
+    padding: 5px;
+}
+
+#body-top {
+    padding-top: 20px;
+}
+
+#body-highlight {
+    color: #ff4c05;
+}
+
+#declaration {
+    top: 10px;
+    padding-top: 30px;
+}
+
+#body-login-display {
+  position: absolute;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  top: 70px;
+  right: 10px;
+  background-color: white;
+  color: #ff8a05;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 0 20px -10px black;
+}
+
+#friend-list {
+  font-family: sans-serif;
+  background: linear-gradient(to right, white 78%, #ff8a05 78%);
+  border-radius: 25px;
+  box-shadow: 0 0 20px -10px black;
+  margin-top: 10px;
+}
+
+#friend-list p {
+    display: inline;
+}
+
+#friend-list #rd {
+  float: left;
+  margin-left: 20px;
+}
+
+#friend-list #mutual {
+  position: absolute;
+  right: 237px;
+}
+
+#friend-list #bd {
+  float: right;
+  margin-right: 27px;
+}
+
+#friend-list #add {
+  float: right;
+  margin-right: 20px;
+}
+
+#row-display {
+    color:black;
+}
+
+#unfriend-btn {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#unfriend-btn:hover {
+  color:#ff4c05;
+}
+
+#addfriend-btn {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    color: white;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#addfriend-btn:hover {
+  color:#ff4c05;
+}
+
+#pagination #left-edge {
+    float: left;
+    margin-left: 200px;
+}
+
+#pagination #right-edge {
+    float: right;
+    margin-right: 200px;
+}
+
+#page-num {
+  position: absolute;
+  right: 300px;
+}
+
+#previous {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: #ff8a05;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+#previous:hover {
+  color:#ff4c05;
+}
+
+#next {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: #ff8a05;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+#next:hover {
+  color:#ff4c05;
+}
+/*End body styling*/
+
+/*Sign up page styling*/
+#body-signup {
+      position: relative;
+      font-family: sans-serif;
+      margin: 2% 35% 10% 35%;
+      padding: 0;
+      background: linear-gradient(to bottom, #ff8a05 65px, white 65px);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+
+#body-signup #details {
+      color: white;
+      font-size: 18px;
+  }
+
+#body-signup p {
+      padding: 10px;
+  }
+
+#err-msg {
+  color: #ff4c05;
+}
+
+#sign-up {
+    position: relative;
+    top: 15px;
+    left: 0;
+    text-align: center;
+}
+
+#sign-up-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#sign-up p {
+    padding: 5px;
+}
+
+#input-fields {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+#sign-up input[type = "text"],#sign-up input[type = "password"] {
+    border: 0;
+    background: white;
+    display: block;
+    margin: 1px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 14px 25px;
+    width: 200px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+#sign-up input[type = "text"]:focus,#sign-up input[type = "password"]:focus {
+    padding: 14px 55px;
+    border-color: #ff4c05;
+}
+
+#sign-up input[type = "submit"], input[ type = "reset"] {
+  border: 0;
+  background: #ff8a05;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#sign-up input[ type = "submit"]:hover, input[ type = "reset"]:hover {
+    background:  #ff4c05;
+}
+/*End sign up page styling*/
+
+/*Login page styling*/
+#body-login {
+      position: relative;
+      font-family: sans-serif;
+      margin: 2% 35% 10% 35%;
+      padding: 0;
+      background: linear-gradient(to bottom, #ff8a05 65px, white 65px);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+
+  #body-login #details {
+      color: white;
+      font-size: 18px;
+  }
+
+  #body-login p {
+      padding: 7px;
+  }
+
+  #login {
+      position: relative;
+      top: 15px;
+      left: 0;
+      text-align: center;
+  }
+
+  #login-title {
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+  }
+
+  #sign-up p {
+      padding: 5px;
+  }
+
+  #login-fields {
+      margin-top: 10px;
+      padding-bottom: 30px;
+  }
+
+  #login input[type = "text"],#login input[type = "password"] {
+      border: 0;
+      background: white;
+      display: block;
+      margin: 1px auto;
+      text-align: center;
+      border: 2px solid black;
+      padding: 14px 25px;
+      width: 200px;
+      outline: none;
+      color: black;
+      border-radius: 24px;
+      transition: 0.25s;
+  }
+
+  #login input[type = "text"]:focus,#login input[type = "password"]:focus {
+      padding: 14px 55px;
+      border-color: #ff4c05;
+  }
+
+  #login input[type = "submit"], input[ type = "reset"] {
+    border: 0;
+    background: #ff8a05;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 14px 20px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+
+  #login input[ type = "submit"]:hover, input[ type = "reset"]:hover {
+      background:  #ff4c05;
+  }
+/*End login page styling*/
+
+/*About page styling*/
+#body-about {
+      position: relative;
+      font-family: sans-serif;
+      margin: 2% 30% 10% 30%;
+      padding: 11px 25px 25px 25px;
+      background: linear-gradient(to bottom, #ff8a05 65px, white 65px);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+
+  #body-about #details {
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+  }
+
+  #body-about p {
+      margin: 5px;
+      padding: 5px;
+  }
+
+  #about-content {
+      padding-top: 10px;
+  }
+
+  #body-about img {
+      height: 50%;
+      width: 95%;
+  }
+
+  #body-about a {
+      text-decoration: none;
+      padding: 10px;
+      color: #ff8a05;
+      transition: 0.3s;
+  }
+
+  #body-about a:hover {
+      color: #ff4c05;
+  }
+/*End About page styling*/
+
+/*Footer styling*/
+#footer {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  background-color: #ff8a05;
+}
+
+footer {
+    padding: 15px;
+}
+/*End footer styling*/
+
+@media screen and (max-width: 700px) {
+  /*Hburger menu reveal*/
+  #hburger {
+      display: inline-block;
+  }
+  /*End hburger menu reveal*/
+
+  /*Desktop nav bar reset*/
+  #navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      float: none;
+      font-family: sans-serif;
+  }
+
+  #nav-element {
+      padding: 0;
+      padding-right: 0;
+  }
+
+  #nav-element a {
+    transition: 0;
+    text-decoration: none;
+    color: white;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #nav-element a:hover {
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  /*End desktop nav bar reset*/
+
+  /*Mobile nav bar styling*/
+  #navbar {
+      margin: 0;
+      padding: 0;
+      top: 51px;
+      width: 100%;
+      display: none;
+  }
+
+  #nav-element {
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid black;
+      background-color: white;
+      font-size: 25px;
+  }
+
+  #nav-element a {
+      transition: 0.3s;
+      text-decoration: none;
+      color: #ff8a05;
+  }
+
+  #nav-element a:hover {
+      color: #ff4c05;
+  }
+  /*End mobile nav bar styling*/
+
+  /*Mobile body content styling*/
+  #body-top {
+      padding-top: 20px;
+  }
+
+  #body-highlight {
+      display: block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  #body {
+      margin: 5% 10% 0 10%;
+      padding: 25px 15px 15px 15px;
+      background: linear-gradient(to top, white 78%, #ff8a05 78%);
+  }
+  /*End mobile body content styling*/
+
+  /*Mobile sign up page body styling*/
+  #body-signup {
+      position: relative;
+      font-family: sans-serif;
+      margin: 5% 20% 10% 20%;
+      padding: 0;
+      background: linear-gradient(to top, white 84%, #ff8a05 84%);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+  /*End mobile sign up page body styling*/
+
+  /*Mobile login page body styling*/
+  #body-login {
+      position: relative;
+      font-family: sans-serif;
+      margin: 5% 20% 10% 20%;
+      padding: 0;
+      background: linear-gradient(to top, white 78%, #ff8a05 78%);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+  /*End mobile login pagestyling*/
+
+  /*Mobile about page styling*/
+  #body-about {
+      position: relative;
+      font-family: sans-serif;
+      margin: 2% 5% 10% 5%;
+      padding: 11px 25px 25px 25px;
+      background: linear-gradient(to top, white 88%, #ff8a05 88%);
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 0 20px -10px;
+  }
+  /*End mobile about page styling*/
+
+  /*Hamburger menu click styling*/
+  #toggle:checked ~ #hb-btn {
+      color: #ff4c05;
+  }
+
+  #toggle:checked ~ #navbar {
+      display: block;
+      z-index: 10;
+  }
+  /*End hamburger menu click styling*/
+}
